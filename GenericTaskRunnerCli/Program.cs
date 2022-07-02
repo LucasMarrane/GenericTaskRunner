@@ -47,7 +47,6 @@ namespace GenericTaskRunnerCli
                     {
                         Console.WriteLine(command);
                     }
-
                 }
 
 
