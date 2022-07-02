@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenericTaskRunner", "GenericTaskRunner\GenericTaskRunner.csproj", "{11D532CF-D364-4777-98E7-6C1C273EA8A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericTaskRunner", "GenericTaskRunner\GenericTaskRunner.csproj", "{11D532CF-D364-4777-98E7-6C1C273EA8A5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GenericTaskRunnerCli", "GenericTaskRunnerCli\GenericTaskRunnerCli.csproj", "{6588FFD9-5C56-41CE-869B-FFC1395CCEB9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestGTR", "TestGTR\TestGTR.csproj", "{08ACED64-3C1D-4353-A3C1-587799A6AE93}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{11D532CF-D364-4777-98E7-6C1C273EA8A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{11D532CF-D364-4777-98E7-6C1C273EA8A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{11D532CF-D364-4777-98E7-6C1C273EA8A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6588FFD9-5C56-41CE-869B-FFC1395CCEB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6588FFD9-5C56-41CE-869B-FFC1395CCEB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6588FFD9-5C56-41CE-869B-FFC1395CCEB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6588FFD9-5C56-41CE-869B-FFC1395CCEB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08ACED64-3C1D-4353-A3C1-587799A6AE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08ACED64-3C1D-4353-A3C1-587799A6AE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08ACED64-3C1D-4353-A3C1-587799A6AE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08ACED64-3C1D-4353-A3C1-587799A6AE93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
