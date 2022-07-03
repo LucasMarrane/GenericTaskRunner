@@ -1,5 +1,6 @@
 ﻿using GenericTaskRunner.Controllers;
 using GenericTaskRunner.Interfaces;
+using GenericTaskRunnerCli.Controllers;
 using System.Reflection;
 
 namespace GenericTaskRunnerCli
@@ -10,17 +11,10 @@ namespace GenericTaskRunnerCli
 
         static void Main(string[] args)
         {
-            Console.Title = "Awesome Task Runner";
-            Console.WriteLine(@"
-                            
-  ,---. ,--------.,------.  
- /  O  \'--.  .--'|  .--. ' 
-|  .-.  |  |  |   |  '--'.' 
-|  | |  |  |  |   |  |\  \  
-`--' `--'  `--'   `--' '--' 
-                            
-");
-            Console.WriteLine("Awesome Task Runner");
+           if(args.Contains("--help") || args.Contains("-h"))
+            {
+                Cli.Initialize();
+            }
 
             try
             {
@@ -35,19 +29,11 @@ namespace GenericTaskRunnerCli
                     if (line != "-h" && line != "--help")
                         return;
                 }
-                var tasks = ExtensionLoader.GetExtensionLoaded();
-
-
+              
                 if (args.Contains("--help") || args.Contains("-h") || line == "-h" || line == "--help")
                 {
-                    var help = tasks.Select(t => t.HelpCommands).SelectMany(s => s);
-                    foreach (var command in help)
-                    {
-                        Console.WriteLine(command.Name);
-                    }
+                    Cli.Help();
                 }
-
-
 
             }
             catch (Exception ex)

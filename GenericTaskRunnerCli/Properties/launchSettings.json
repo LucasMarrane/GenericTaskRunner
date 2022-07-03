@@ -1,7 +1,8 @@
 {
   "profiles": {
     "GenericTaskRunnerCli": {
-      "commandName": "Project"
+      "commandName": "Project",
+      "commandLineArgs": "-h\r\n"
     }
   }
 }

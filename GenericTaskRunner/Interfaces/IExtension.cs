@@ -5,6 +5,7 @@
     /// </summary>
     public interface IExtension
     {
+        string AppName { get; }
         /// <summary>
         /// <c>HelpCommands</c>: array of commands to use to extend the core program
         /// </summary>        
