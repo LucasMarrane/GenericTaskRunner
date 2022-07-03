@@ -4,11 +4,20 @@ namespace TestGTR
 {
     public class Teste : IExtension
     {
-        public string[] HelpCommands => new string[] {"teste - sassa lele"};
+        public List<HelpCommand> HelpCommands => new List<HelpCommand>()
+        {
+            new HelpCommand()
+            {
+                Description = "Calcule valores",                         
+                Name = "calcule",
+                Shortcut= "calc"                
+            }
+        };
 
-        public void Run(string[] args)
+        public dynamic Run(string[] args)
         {
             Console.WriteLine("Teste");
-        }
+            return null;
+        }       
     }
 }

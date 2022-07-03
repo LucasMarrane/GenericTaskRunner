@@ -28,5 +28,18 @@ namespace GenericTaskRunner.Controllers
                 }
             }
         }
+
+        public static List<IExtension> GetExtensionLoaded()
+        {
+            var config = Configuration.GetConfig();
+
+            List<IExtension> tasks = config.plugins.SelectMany(pluginPath =>
+            {
+                Assembly pluginAssembly = LoadPlugin(pluginPath);
+                return CreateCommands(pluginAssembly);
+            }).ToList();
+
+            return tasks;
+        }
     }
 }
